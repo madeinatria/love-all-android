@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:src="@drawable/loginvector"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Loyality Program"
+            android:textColor="#fff"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rectangle_white"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Email address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeColor="#878686"
+                android:textColorHint="#878686"
+                app:hintTextColor="#000"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@null"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeColor="#878686"
+                android:textColorHint="#878686"
+                app:hintTextColor="#000"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@null"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/loginUserButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="#000"
+                android:textColor="#fff"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textAllCaps="false"
+                android:text="Login" />
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Dont have credentials yet? Contact Us"
+            android:textColor="#fff"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12dp"
+             />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

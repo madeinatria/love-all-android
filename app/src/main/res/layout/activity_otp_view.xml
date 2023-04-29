@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".OtpView">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/enterotp"
+        android:scaleType="fitCenter"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify phone number"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+        ></TextView>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just confirming, if its you. OTP has been sent to +91 8547963214"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#6A6A6A"
+        android:textSize="15dp"
+        ></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="#878686"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeColor="#878686"
+        app:hintTextColor="#000"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:inputType="number"
+            android:maxLines="1"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:hint="Enter OTP"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/verify_button"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp_layout"
+        android:layout_marginTop="16dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Verify OTP"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+
+        />
+
+</LinearLayout>
